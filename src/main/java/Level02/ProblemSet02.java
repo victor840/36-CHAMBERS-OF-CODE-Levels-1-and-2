@@ -7,7 +7,14 @@ public class ProblemSet02 {
      * the output should be 1:3). Separate the number of hours and minutes with a colon.
      */
     public String timeConvert(int num){
-        return null;
+        // create int variable called hours and make it equal to num/60
+        // create int variable called minutes = nums minus hours times 60
+        // create String variable called timeStr and make it equal to hours, append ":" and + minutes
+        // return timeStr variable
+        int hours = num/60;
+        int minutes = num - (hours * 60);
+        String timeStr = hours + ":" + minutes;
+        return timeStr;
     }
 
     /**
